@@ -36,7 +36,7 @@ Designed following Layered Architecture principles for Embedded Systems to ensur
 └── README.md
 
 ```
-### 🔌 API Overview
+## 🔌 API Overview
 
 ```c
 /* Pin Control APIs */
@@ -50,8 +50,6 @@ DIO_ErrorStatus DIO_enumSetPortDirection(u8 Copy_u8PORT, u8 Copy_u8Direction);
 DIO_ErrorStatus DIO_enumSetPortValue(u8 Copy_u8PORT, u8 Copy_u8Value);
 DIO_ErrorStatus DIO_enumGetPortValue(u8 Copy_u8PORT, u8* Copy_pu8Value);
 DIO_ErrorStatus DIO_enumTogglePortValue(u8 Copy_u8PORT);
-```
-
 
 ```
 ### 💻 Tech Stack
