@@ -28,7 +28,9 @@ Designed following Layered Architecture principles for Embedded Systems to ensur
 │   ├── BIT_MATH.h            # Bit-manipulation macros
 │   └── STD_TYPES.h           # Standard type definitions (u8, etc.)
 ├── APPLICATIONS/
-│   └── LED.c                 # Application test cases
+│   └── LED.c  
+├── Simulation/
+│   └── LED_TEST.pdsprj    # Proteus simulation file                  # Application test cases
 └── README.md
 
 ```
