@@ -20,17 +20,19 @@ Designed following Layered Architecture principles for Embedded Systems to ensur
 ```text
 ├── MCAL/
 │   └── DIO_1/
-│       ├── DIO_configure.h   # Driver configurations
-│       ├── DIO_interface.h   # Public APIs & type declarations
-│       ├── DIO_private.h     # Register memory maps
-│       └── DIO_programe.c    # API Implementations
+│       ├── DIO_configure.h     # Driver configurations
+│       ├── DIO_interface.h     # Public APIs & type declarations
+│       ├── DIO_private.h       # Register memory maps
+│       └── DIO_programe.c      # API Implementations
 ├── LIB/
-│   ├── BIT_MATH.h            # Bit-manipulation macros
-│   └── STD_TYPES.h           # Standard type definitions (u8, etc.)
+│   ├── BIT_MATH.h              # Bit-manipulation macros
+│   └── STD_TYPES.h             # Standard type definitions (u8, etc.)
 ├── APPLICATIONS/
-│   └── LED.c  
+│   └── LED.c                   # Application test cases
 ├── Simulation/
-│   └── LED_TEST.pdsprj    # Proteus simulation file                  # Application test cases
+│   └── LED_TEST.pdsprj         # Proteus simulation file  
+├── Snapshots/
+│   └── circuit_simulation.png  # Snapshot for simulation                      
 └── README.md
 
 ```
@@ -60,3 +62,6 @@ Target Controller: Microchip ATmega32
 
 Toolchain: AVR-GCC / Eclipse IDE
 ```
+## 📸 Simulation Preview
+
+![Proteus Simulation](Snapshots/circuit_simulation.png)
