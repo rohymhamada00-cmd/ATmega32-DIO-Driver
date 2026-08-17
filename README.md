@@ -59,7 +59,7 @@ Language: Embedded C
 Target Controller: Microchip ATmega32
 
 Toolchain: AVR-GCC / Eclipse IDE
-```
+
 ## 📸 Simulation Preview
 
 ![Proteus Simulation](Snapshots/circuit_simulation.png)
