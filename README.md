@@ -10,7 +10,7 @@ Designed following Layered Architecture principles for Embedded Systems to ensur
 
 * **Layered Architecture:** Clear separation between Application, MCAL, and Hardware layers.
 * **Robust Error Handling:** Functions utilize `DIO_ErrorStatus` enum (`DIO_OK`, `DIO_NOK`) to handle invalid inputs safely.
-* **Pointer Validation:** Validates output pointers before dereferencing them.
+* **NULL Pointer Checks:** Validates output pointers before dereferencing them.
 * **Full Bitwise Control:** Comprehensive APIs for setting pin/port directions, setting pin/port states, reading values, and toggling pin states.
 
 ---
