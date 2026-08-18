@@ -1,6 +1,6 @@
 # ATmega32 DIO (GPIO) Driver
 
-A fully modular and highly configurable **MCAL (Microcontroller Abstraction Layer)** Digital Input/Output (DIO) Driver written in C for the **ATmega32** microcontroller. 
+A modular MCAL DIO (GPIO) driver written in C for the ATmega32 microcontroller **MCAL (Microcontroller Abstraction Layer)** Digital Input/Output (DIO) Driver written in C for the **ATmega32** microcontroller. 
 
 Designed following Layered Architecture principles for Embedded Systems to ensure code reusability, safety, and readability.
 
@@ -10,7 +10,7 @@ Designed following Layered Architecture principles for Embedded Systems to ensur
 
 * **Layered Architecture:** Clear separation between Application, MCAL, and Hardware layers.
 * **Robust Error Handling:** Functions utilize `DIO_ErrorStatus` enum (`DIO_OK`, `DIO_NOK`) to handle invalid inputs safely.
-* **Pointer Safety:** Includes `NULL` pointer checks to prevent crashes when reading pin or port values.
+* **Pointer Validation:** Validates output pointers before dereferencing them.
 * **Full Bitwise Control:** Comprehensive APIs for setting pin/port directions, setting pin/port states, reading values, and toggling pin states.
 
 ---
