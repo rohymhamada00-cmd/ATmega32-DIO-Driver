@@ -40,16 +40,16 @@ Designed following Layered Architecture principles for Embedded Systems to ensur
 
 ```c
 /* Pin Control APIs */
-DIO_ErrorStatus DIO_enumSetPinDirection(u8 Copy_u8PORT, u8 Copy_u8PIN, u8 Copy_u8Direction);
-DIO_ErrorStatus DIO_enumSetPinValue(u8 Copy_u8PORT, u8 Copy_u8PIN, u8 Copy_u8Value);
-DIO_ErrorStatus DIO_enumGetPinValue(u8 Copy_u8PORT, u8 Copy_u8PIN, u8* Copy_pu8Value);
-DIO_ErrorStatus DIO_enumTogglePinValue(u8 Copy_u8PORT, u8 Copy_u8PIN);
+DIO_ErrorStatus DIO_voidSetPinDirection  (U8 Copy_U8PORT , U8 Copy_U8PIN , U8 Copy_U8Direction);
+DIO_ErrorStatus DIO_voidSetvalue         (U8 Copy_U8PORT , U8 Copy_U8PIN , U8 Copy_U8Value    );
+DIO_ErrorStatus DIO_voidTogglePinValue   (U8 Copy_U8PORT , U8 Copy_U8PIN                      );
+DIO_ErrorStatus DIO_GetValue             (U8 Copy_U8PORT , U8 Copy_U8PIN , U8* Copy_U8Value   );
 
 /* Port Control APIs */
-DIO_ErrorStatus DIO_enumSetPortDirection(u8 Copy_u8PORT, u8 Copy_u8Direction);
-DIO_ErrorStatus DIO_enumSetPortValue(u8 Copy_u8PORT, u8 Copy_u8Value);
-DIO_ErrorStatus DIO_enumGetPortValue(u8 Copy_u8PORT, u8* Copy_pu8Value);
-DIO_ErrorStatus DIO_enumTogglePortValue(u8 Copy_u8PORT);
+DIO_ErrorStatus DIO_voidSetPortDirection  (U8 Copy_U8PORT  , U8 Copy_U8Direction);
+DIO_ErrorStatus DIO_voidSetPortValue      (U8 Copy_U8PORT   , U8 Copy_U8Value   );
+DIO_ErrorStatus DIO_enumTogglePortValue   (U8 Copy_u8PORT                       );
+DIO_ErrorStatus DIO_GetPortValue          (U8 Copy_U8PORT,U8* Copy_u8Value      );
 
 ```
 ### 💻 Tech Stack
